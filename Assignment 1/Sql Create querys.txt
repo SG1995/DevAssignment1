@@ -1,0 +1,97 @@
+SQL QUERYS dev 5 assignment 1
+
+
+CREATE TABLE Address (
+Country varchar(50),
+Postal_Code varchar(20),
+Street_Name varchar(40),
+House_Number varchar(20),
+City varchar(60),
+PRIMARY KEY(Country, Postal_Code)
+);
+
+CREATE TABLE Employee(
+BSN int,
+Name varchar(30),
+Surname varchar(30),
+Building_Name varchar(30),
+PRIMARY KEY (BSN)
+);
+
+CREATE TABLE E_Address(
+BSN int,
+Country varchar(50),
+Postal_Code varchar(20),
+PRIMARY KEY (BSN, Country, Postal_Code),
+FOREIGN KEY (BSN) REFERENCES Employee(BSN),
+FOREIGN KEY (Country, Postal_Code) REFERENCES Address(Country, Postal_Code)
+);
+
+CREATE TABLE Degree (
+Course varchar(30),
+School varchar(30),
+Level varchar(30),
+PRIMARY KEY (Course, School, Level)
+);
+
+CREATE TABLE E_Degree (
+BSN int,
+Course varchar(30),
+School varchar(30),
+Level varchar(30),
+PRIMARY KEY(BSN, Course, School, Level),
+Foreign Key(BSN) REFERENCES Employee(BSN),
+Foreign Key(Course, School, Level) REFERENCES Degree(Course, School, Level)
+);
+
+CREATE TABLE E_Position (
+BSN int,
+Name varchar(30),
+Hourly_Fee float,
+PRIMARY KEY (BSN, Name),
+FOREIGN KEY (BSN) REFERENCES Employee(BSN)
+);
+
+CREATE TABLE Pos_Description (
+Name varchar(30),
+Description varchar(300),
+PRIMARY KEY (Name)
+);
+
+ALTER TABLE E_Position 
+ADD FOREIGN KEY (Name) REFERENCES Pos_Description(Name)
+;
+
+CREATE TABLE Project (
+P_ID int,
+Budget float,
+Total_Amount_Of_Allocated_Hours float,
+Building_Name varchar(30),
+Primary Key (P_ID)
+);
+
+CREATE TABLE Proj_Pos (
+BSN int,
+Name varchar (30),
+P_ID int,
+PRIMARY KEY (BSN, Name, P_ID),
+FOREIGN KEY (BSN) REFERENCES Employee (BSN),
+FOREIGN KEY (Name) REFERENCES Pos_Description (Name),
+FOREIGN KEY (P_ID) REFERENCES Project (P_ID)
+);
+
+CREATE TABLE Headquarters (
+Building_Name varchar(30),
+Number_Of_Rooms int,
+Monthly_Rent float,
+Country varchar (50),
+Postal_Code varchar(20),
+PRIMARY KEY (Building_Name),
+Foreign KEY (Country, Postal_Code) REFERENCES Address (Country, Postal_Code)
+);
+
+ALTER TABLE Employee ADD Foreign key(Building_Name) REFERENCES Headquarters(Building_Name);
+ALTER TABLE Project ADD FOREIGN KEY (Building_Name) REFERENCES Headquarters(Building_Name);
+
+
+
