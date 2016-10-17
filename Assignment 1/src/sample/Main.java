@@ -26,7 +26,6 @@ public class Main extends Application {
         Model model = new Model();
         model.connect();
         model.insertTest();
-        //Stefs zijn awesome
         launch(args);
 
     }
