@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10.0" prefHeight="72.0" prefWidth="339.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddEmployeeController">
+<GridPane alignment="center" hgap="10.0" prefHeight="72.0" prefWidth="339.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints maxWidth="181.0" minWidth="91.0" prefWidth="91.0" />
       <ColumnConstraints maxWidth="196.0" minWidth="10.0" prefWidth="86.0" />
@@ -19,7 +19,7 @@
    <children>
       <Button mnemonicParsing="false" onAction="#AddEmployeeView" prefHeight="31.0" prefWidth="112.0" text="Add" GridPane.rowIndex="1" />
       <TextField text="Employee" GridPane.columnIndex="1" />
-      <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" text="Modify" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#ModifyEmployeeView" prefHeight="31.0" prefWidth="112.0" text="Modify" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Delete" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       
    </children>

@@ -17,7 +17,7 @@ import java.util.Observable;
 
 import static java.lang.Integer.parseInt;
 
-public class AddEmployeeController
+public class Controller
 {
 
     Stage stage;
@@ -43,6 +43,27 @@ public class AddEmployeeController
             e.printStackTrace();
         }
 
+    }
+
+    public void ModifyEmployeeView(ActionEvent actionEvent)
+    {
+        try{
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ModifyEmployeeView.fxml"));
+            //Place fxml in Parent.
+            Parent root1 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("ModifyEmployee");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root1));
+            stage.show();
+
+
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 
@@ -87,6 +108,7 @@ public class AddEmployeeController
         model.AddEmployeeDBTest(BSN, Name, Surname, Building_Name, Country, Postal_Code, Street_Name, House_Number, City, Course, School, Level);
         System.out.println("Done");
     }
+
 
 
 }
