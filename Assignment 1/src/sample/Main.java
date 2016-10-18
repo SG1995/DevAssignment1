@@ -6,14 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("screen.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
         primaryStage.setTitle("Assignment 1");
         primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.show();
@@ -22,11 +19,11 @@ public class Main extends Application {
 
     public static void main(String[] args)
     {
-
-        Model model = new Model();
-        model.connect();
-        model.insertTest();
+        //Model model = new Model();
+        //model.connect();
+        //model.insertTest();
         launch(args);
-
     }
+
+    //Misschien verschillende models en controllers maken per view.
 }
