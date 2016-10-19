@@ -1,4 +1,3 @@
-SQL QUERYS dev 5 assignment 1
 
 
 CREATE TABLE Address (
@@ -23,8 +22,8 @@ BSN int,
 Country varchar(50),
 Postal_Code varchar(20),
 PRIMARY KEY (BSN, Country, Postal_Code),
-FOREIGN KEY (BSN) REFERENCES Employee(BSN),
-FOREIGN KEY (Country, Postal_Code) REFERENCES Address(Country, Postal_Code)
+FOREIGN KEY (BSN) REFERENCES Employee(BSN) ON UPDATE CASCADE ON DELETE CASCADE,
+FOREIGN KEY (Country, Postal_Code) REFERENCES Address(Country, Postal_Code) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Degree (
@@ -40,44 +39,26 @@ Course varchar(30),
 School varchar(30),
 Level varchar(30),
 PRIMARY KEY(BSN, Course, School, Level),
-Foreign Key(BSN) REFERENCES Employee(BSN),
-Foreign Key(Course, School, Level) REFERENCES Degree(Course, School, Level)
+Foreign Key(BSN) REFERENCES Employee(BSN) ON UPDATE CASCADE ON DELETE CASCADE,
+Foreign Key(Course, School, Level) REFERENCES Degree(Course, School, Level) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+
 
 CREATE TABLE E_Position (
 BSN int,
 Name varchar(30),
 Hourly_Fee float,
 PRIMARY KEY (BSN, Name),
-FOREIGN KEY (BSN) REFERENCES Employee(BSN)
+FOREIGN KEY (BSN) REFERENCES Employee(BSN) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Pos_Description (
+BSN int,
 Name varchar(30),
 Description varchar(300),
-PRIMARY KEY (Name)
-);
-
-ALTER TABLE E_Position 
-ADD FOREIGN KEY (Name) REFERENCES Pos_Description(Name)
-;
-
-CREATE TABLE Project (
-P_ID int,
-Budget float,
-Total_Amount_Of_Allocated_Hours float,
-Building_Name varchar(30),
-Primary Key (P_ID)
-);
-
-CREATE TABLE Proj_Pos (
-BSN int,
-Name varchar (30),
-P_ID int,
-PRIMARY KEY (BSN, Name, P_ID),
-FOREIGN KEY (BSN) REFERENCES Employee (BSN),
-FOREIGN KEY (Name) REFERENCES Pos_Description (Name),
-FOREIGN KEY (P_ID) REFERENCES Project (P_ID)
+PRIMARY KEY (BSN, Name),
+FOREIGN KEY (BSN, Name) REFERENCES E_Position(BSN, Name) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Headquarters (
@@ -87,11 +68,30 @@ Monthly_Rent float,
 Country varchar (50),
 Postal_Code varchar(20),
 PRIMARY KEY (Building_Name),
-Foreign KEY (Country, Postal_Code) REFERENCES Address (Country, Postal_Code)
+FOREIGN KEY (Country, Postal_Code) REFERENCES Address (Country, Postal_Code) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-ALTER TABLE Employee ADD Foreign key(Building_Name) REFERENCES Headquarters(Building_Name);
-ALTER TABLE Project ADD FOREIGN KEY (Building_Name) REFERENCES Headquarters(Building_Name);
+CREATE TABLE Project (
+P_ID int,
+Budget float,
+Total_Amount_Of_Allocated_Hours float,
+Building_Name varchar(30),
+PRIMARY KEY (P_ID)
+FOREIGN KEY (Building_Name) REFERENCES Headquarters (Building_Name) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE Proj_Pos (
+BSN int,
+Name varchar (30),
+P_ID int,
+PRIMARY KEY (BSN, Name, P_ID),
+FOREIGN KEY (BSN, Name) REFERENCES E_Position (BSN, Name) ON UPDATE CASCADE ON DELETE CASCADE,
+FOREIGN KEY (P_ID) REFERENCES Project (P_ID) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+ALTER TABLE Employee ADD Foreign key(Building_Name) REFERENCES Headquarters(Building_Name) ON UPDATE CASCADE ON DELETE CASCADE;
+
 
 
 

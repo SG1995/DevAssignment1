@@ -23,7 +23,7 @@
    </rowConstraints>
    <children>
       <Button mnemonicParsing="false" onAction="#AddEmployeeView" prefHeight="31.0" prefWidth="112.0" text="Add" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" onAction="#ModifyEmployeeView" prefHeight="31.0" prefWidth="112.0" text="Modify" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#ModifyEmployeeMainView" prefHeight="31.0" prefWidth="112.0" text="Modify" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Delete" GridPane.columnIndex="2" GridPane.rowIndex="1" />
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="88.0" text="Employee" GridPane.columnIndex="1" />
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="86.0" text="Project" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />

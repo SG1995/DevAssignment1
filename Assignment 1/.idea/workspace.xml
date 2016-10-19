@@ -8,6 +8,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 1/sample/MainView.fxml" afterPath="$PROJECT_DIR$/out/production/Assignment 1/sample/MainView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/MainView.fxml" afterPath="$PROJECT_DIR$/src/sample/MainView.fxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sample/AddEmployeeModel.java" afterPath="$PROJECT_DIR$/src/sample/Model.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sample/ModidyEmployeeModel.java" afterPath="$PROJECT_DIR$/src/sample/ModifyEmployeeModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sample/ModifyEmployeeView.fxml" afterPath="$PROJECT_DIR$/src/sample/ModifyEmployeeAddressView.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +23,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -99,17 +101,44 @@
               <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
+                <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+                <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
+                <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
+                <element signature="method#onClick#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModidyEmployeeModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ModidyEmployeeModel.java">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="491">
+              <caret line="171" column="76" selection-start-line="171" selection-start-column="76" selection-end-line="171" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Model#0" expanded="false" />
+                <element signature="method#connect#0;class#Model#0" expanded="false" />
+                <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
+                <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
+                <element signature="method#insertTest#0;class#Model#0" expanded="false" />
+                <marker date="1476877315027" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
+                <marker date="1476877315027" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
+                <marker date="1476877315027" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
+                <marker date="1476877315027" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
+                <marker date="1476877315027" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
+                <marker date="1476877315027" expanded="true" signature="2682:2744" ph="SELECT Name,... Employee" />
+                <marker date="1476877315027" expanded="true" signature="3601:3832" ph="SELECT a.Cou... Address" />
+                <marker date="1476877315027" expanded="true" signature="4843:4998" ph="UPDATE Emplo... " />
+                <marker date="1476877315027" expanded="true" signature="5632:5732" ph="UPDATE E_Add... " />
+                <marker date="1476877315027" expanded="true" signature="5782:5848" ph="UPDATE Addre... " />
+                <marker date="1476877315027" expanded="true" signature="5782:5865" ph="UPDATE Addre... " />
+                <marker date="1476877315027" expanded="true" signature="5782:5888" ph="UPDATE Addre... " />
+                <marker date="1476877315027" expanded="true" signature="5782:6041" ph="UPDATE Addre... " />
+                <marker date="1476877315027" expanded="true" signature="5782:6054" ph="UPDATE Addre... " />
+                <marker date="1476877315027" expanded="true" signature="6599:6619" ph="SELECT * FRO... Degree" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,9 +162,16 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="56">
+              <caret line="1667" column="0" selection-start-line="1667" selection-start-column="0" selection-end-line="1667" selection-end-column="0" />
+              <folding>
+                <element signature="e#10063#10064#0" expanded="true" />
+                <element signature="e#10139#10140#0" expanded="true" />
+                <marker date="1476707953582" expanded="true" signature="90944:90973" ph="SELECT @@ses... " />
+                <marker date="1476707953582" expanded="true" signature="104894:104921" ph="SELECT @@ses... " />
+                <marker date="1476707953582" expanded="true" signature="107126:107155" ph="select @@ses... " />
+                <marker date="1476707953582" expanded="true" signature="114256:114271" ph="/* missingVa... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/sample/screen.fxml" />
         <option value="$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/NonRegisteringDriver.class" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Model.java" />
         <option value="$PROJECT_DIR$/src/sample/AddEmployeeView.fxml" />
         <option value="$PROJECT_DIR$/src/sample/AddEmployeeModel.java" />
         <option value="$PROJECT_DIR$/src/sample/ModifyEmployeeController.java" />
@@ -224,10 +259,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -342,8 +377,13 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method />
@@ -362,8 +402,13 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -636,6 +681,9 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -722,6 +770,19 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
@@ -788,7 +849,7 @@
     <option name="totallyTimeSpent" value="42990000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -798,16 +859,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18221734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22502744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29069766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15416667" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10729167" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34467617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -836,9 +899,32 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Model.java</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Model.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="25" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="actionEvent" />
+        <watch expression="resultSet" language="JAVA" />
+        <watch expression="resultSet" language="JAVA" />
+        <watch expression="lijst.get(2)" />
+        <watch expression="lijst.get(2)" language="JAVA" />
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -892,11 +978,16 @@
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
@@ -980,11 +1071,16 @@
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
@@ -1024,11 +1120,16 @@
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
@@ -1068,11 +1169,16 @@
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1112,6 +1218,11 @@
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1141,6 +1252,11 @@
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
+            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1186,25 +1302,10 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/javafx-src.zip!/javafx/scene/control/TextInputControl.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/javafx-src.zip!/javafx/application/Application.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
-    <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="990" column="0" selection-start-line="990" selection-start-column="0" selection-end-line="990" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/StatementImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
         </state>
       </provider>
     </entry>
