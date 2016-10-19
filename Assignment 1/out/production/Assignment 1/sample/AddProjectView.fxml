@@ -4,7 +4,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -17,10 +17,10 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <TextField promptText="Project ID" />
-      <TextField promptText="Total Amount Of Allocated Hours" GridPane.columnIndex="2" />
-      <TextField promptText="Budget" GridPane.columnIndex="1" />
-      <TextField promptText="Building Name" GridPane.columnIndex="3" />
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="294.0" text="Apply" GridPane.rowIndex="2" />
+      <TextField fx:id="AP_P_ID" promptText="Project ID" />
+      <TextField fx:id="AP_Total_Amount_Of_Allocated_Hours" promptText="Total Amount Of Allocated Hours" GridPane.columnIndex="2" />
+      <TextField fx:id="AP_Budget" promptText="Budget" GridPane.columnIndex="1" />
+      <TextField fx:id="AP_Building_Name" promptText="Building Name" GridPane.columnIndex="3" />
+      <Button mnemonicParsing="false" onAction="#OnAddProjectClick" prefHeight="25.0" prefWidth="294.0" text="Apply" GridPane.rowIndex="2" />
    </children>
 </GridPane>

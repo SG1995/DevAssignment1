@@ -108,6 +108,42 @@ public class Controller
         }
     }
 
+    public void ModifyDegreeView(ActionEvent actionEvent)
+    {
+        try {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ModifyEmployeeDegreeView.fxml"));
+            //Place fxml in Parent.
+            Parent root2 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("ModifyEmployeeDegree");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root2));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void DeleteEmployeeView(ActionEvent actionEvent)
+    {
+        try {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeleteEmployeeView.fxml"));
+            //Place fxml in Parent.
+            Parent root2 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("DeleteEmployee");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root2));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     // ABOVE THIS LINE ARE VIEWS, BELOW ARE EVENTS
 
@@ -216,11 +252,17 @@ public class Controller
     @FXML
     private TextField City2;
 
+    String oldCountry;
+    String oldPostal;
+
+
     public void SearchAddress(ActionEvent actionEvent) {
         int BSN2 = parseInt(this.BSN2.getText());
         Model model = new Model();
         model.connect();
         lijst = model.SearchAddress(BSN2);
+        oldCountry = lijst.get(0) + "";
+        oldPostal = lijst.get(1) + "";
         Country2.setText(lijst.get(0) + "");
         Postal_Code2.setText(lijst.get(1) + "");
         Street_Name2.setText(lijst.get(2) + "");
@@ -235,10 +277,64 @@ public class Controller
         String Street_Name2 = this.Street_Name2.getText();
         String House_Number2 = this.House_Number2.getText();
         String City2 = this.City2.getText();
+
         Model model = new Model();
         model.connect();
-        model.ModifyAddress(BSN2, Country2, Postal_code2, Street_Name2, House_Number2, City2);
+        model.ModifyAddress(oldCountry, oldPostal, Country2, Postal_code2, Street_Name2, House_Number2, City2);
     }
+
+    public void SearchPersonal(ActionEvent actionEvent)
+    {
+        int BSN1 = parseInt(this.BSN1.getText());
+        Model model = new Model();
+        model.connect();
+        lijst = model.SearchPersonal(BSN1);
+        Name1.setText(lijst.get(0) + "");
+        Surname1.setText(lijst.get(1) + "");
+        Building_Name1.setText(lijst.get(2) + "");
+    }
+
+    @FXML private TextField DegreeBSN;
+    @FXML private TextField DegreeCourse;
+    @FXML private TextField DegreeSchool;
+    @FXML private TextField DegreeLevel;
+    String oldCourse;
+    String oldSchool;
+    String oldLevel;
+    public void SearchDegree(ActionEvent actionEvent)
+    {
+        int DegreeBsn = parseInt(this.DegreeBSN.getText());
+        Model model = new Model();
+        model.connect();
+        lijst = model.SearchDegree(DegreeBsn);
+        DegreeCourse.setText(lijst.get(0) + "");
+        DegreeSchool.setText(lijst.get(1) + "");
+        DegreeLevel.setText(lijst.get(0) + "");
+        oldCourse = lijst.get(0) + "";
+        oldSchool = lijst.get(1) + "";
+        oldLevel = lijst.get(2) + "";
+    }
+
+
+    public void ModifyDegree(ActionEvent actionEvent)
+    {
+        String DegreeCourse = this.DegreeCourse.getText();
+        String DegreeSchool = this.DegreeSchool.getText();
+        String DegreeLevel = this.DegreeLevel.getText();
+        Model model = new Model();
+        model.connect();
+        model.ModifyDegree(oldCourse, oldSchool, oldLevel, DegreeCourse, DegreeSchool, DegreeLevel);
+    }
+
+    @FXML private TextField DeleteBSN;
+    public void DeleteEmployee(ActionEvent actionEvent)
+    {
+        int DeleteBSN = parseInt(this.DeleteBSN.getText());
+        Model model = new Model();
+        model.connect();
+        model.DeleteEmployee(DeleteBSN);
+    }
+
 
 }
 

@@ -1,6 +1,7 @@
 package sample;
 import javafx.collections.ObservableList;
 
+import java.rmi.server.ExportException;
 import java.sql.*;
 import java.math.*;
 import java.util.ArrayList;
@@ -137,6 +138,36 @@ public class Model
         return null;
     }
 
+    public ArrayList SearchDegree(int DegreeBSN)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                sql = "SELECT Course, School, Level FROM E_Degree WHERE BSN = " + DegreeBSN + ";";
+                resultSet = statement.executeQuery(sql);
+                resultSet.next();
+                ArrayList lijst = new ArrayList();
+                lijst.add (resultSet.getString(1));
+                lijst.add (resultSet.getString(2));
+                lijst.add (resultSet.getString(3));
+                conn.close();
+                return lijst;
+
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public void ModifyEmployee(int BSN1, String Name1, String Surname1, String Building_Name1)
     {
         try
@@ -161,18 +192,17 @@ public class Model
         }
     }
 
-    public void ModifyAddress(int BSN2, String Country2, String Postal_Code2, String Street_Name2, String House_Number2, String City2)
+    public void ModifyAddress(String oldCountry, String oldPostal, String Country2, String Postal_Code2, String Street_Name2, String House_Number2, String City2)
     {
         try
         {
             Statement statement = conn.createStatement();
             try
             {
-                //String eaUpdate = "UPDATE E_Address SET Country = '" + Country2 + "', Postal_Code = '" + Postal_Code2 + "' WHERE BSN = " + BSN2 + ";";
-                String aUpdate = "UPDATE Address a, E_Address e SET a.Country = '" + Country2 + "', a.Postal_Code = '" + Postal_Code2 + "', a.Street_Name = '" + Street_Name2 + "', a.House_Number = '" + House_Number2
-                                + "', a.City = '" + City2 + "' WHERE e.BSN = " + BSN2 + ";";
-                //statement.execute(eaUpdate);
-                statement.execute(aUpdate);
+
+                String eUpdate = "UPDATE Address SET Country = '" + Country2 + "', Postal_Code = '" + Postal_Code2 + "', Street_Name = '" + Street_Name2 + "', House_Number = '" + House_Number2
+                        + "', City = '" + City2 + "' WHERE Country = '" + oldCountry + "' AND Postal_Code = '" + oldPostal + "';";
+                statement.execute(eUpdate);
                 System.out.println("Done");
                 conn.close();
             }
@@ -219,5 +249,53 @@ public class Model
             e.printStackTrace();
         }
 
+    }
+
+    public void ModifyDegree(String oldCourse, String oldSchool, String oldLevel, String DegreeCourse, String DegreeSchool, String DegreeLevel)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String DegreeUpdate = "UPDATE Degree SET Course = '" + DegreeCourse + "', School = '" + DegreeSchool + "', Level = '"
+                                        + DegreeLevel + "' WHERE Course = '" + oldCourse + "' AND School = '" + oldSchool + "' AND Level = '"
+                                        + oldLevel + "';";
+                statement.execute(DegreeUpdate);
+                System.out.println("Done");
+                conn.close();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public void DeleteEmployee(int deleteBSN)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+               String DeleteBSN = "DELETE FROM Employee WHERE BSN = " + deleteBSN + ";";
+                statement.execute(DeleteBSN);
+                System.out.println("Done");
+                conn.close();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }
