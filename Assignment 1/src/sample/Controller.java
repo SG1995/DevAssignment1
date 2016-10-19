@@ -18,9 +18,8 @@ public class Controller
 {
     Stage stage;
 
-    public void AddEmployeeView(ActionEvent actionEvent) throws IOException
-    {
-        try{
+    public void AddEmployeeView(ActionEvent actionEvent) throws IOException {
+        try {
             //load the fxml in fxmlloader.
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AddEmployeeView.fxml"));
             //Place fxml in Parent.
@@ -33,16 +32,14 @@ public class Controller
             stage.show();
 
 
-
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    public void ModifyEmployeeMainView(ActionEvent actionEvent)
-    {
-        try{
+    public void ModifyEmployeeMainView(ActionEvent actionEvent) {
+        try {
             //load the fxml in fxmlloader.
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ModifyEmployeeMainView.fxml"));
             //Place fxml in Parent.
@@ -55,15 +52,13 @@ public class Controller
             stage.show();
 
 
-
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void AddProjectView(ActionEvent actionEvent)
-    {
-        try{
+    public void AddProjectView(ActionEvent actionEvent) {
+        try {
             //load the fxml in fxmlloader.
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AddProjectView.fxml"));
             //Place fxml in Parent.
@@ -74,9 +69,13 @@ public class Controller
             // pick parent to set on stage and show.
             stage.setScene(new Scene(root1));
             stage.show();
-    public void ModifyPersonalView(ActionEvent actionEvent)
-    {
-        try{
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void ModifyPersonalView(ActionEvent actionEvent) {
+        try {
             //load the fxml in fxmlloader.
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ModifyEmployeePersonalView.fxml"));
             //Place fxml in Parent.
@@ -87,14 +86,13 @@ public class Controller
             // pick parent to set on stage and show.
             stage.setScene(new Scene(root2));
             stage.show();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void ModifyAddressView(ActionEvent actionEvent)
-    {
-        try{
+    public void ModifyAddressView(ActionEvent actionEvent) {
+        try {
             //load the fxml in fxmlloader.
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ModifyEmployeeAddressView.fxml"));
             //Place fxml in Parent.
@@ -105,12 +103,7 @@ public class Controller
             // pick parent to set on stage and show.
             stage.setScene(new Scene(root2));
             stage.show();
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -119,22 +112,32 @@ public class Controller
     // ABOVE THIS LINE ARE VIEWS, BELOW ARE EVENTS
 
 
+    @FXML
+    private TextField BSN;
+    @FXML
+    private TextField Name;
+    @FXML
+    private TextField Surname;
+    @FXML
+    private TextField Country;
+    @FXML
+    private TextField Postal_Code;
+    @FXML
+    private TextField Street_Name;
+    @FXML
+    private TextField House_Number;
+    @FXML
+    private TextField City;
+    @FXML
+    private TextField Course;
+    @FXML
+    private TextField School;
+    @FXML
+    private TextField Level;
+    @FXML
+    private TextField Building_Name;
 
-    @FXML private TextField BSN;
-    @FXML private TextField Name;
-    @FXML private TextField Surname;
-    @FXML private TextField Country;
-    @FXML private TextField Postal_Code;
-    @FXML private TextField Street_Name;
-    @FXML private TextField House_Number;
-    @FXML private TextField City;
-    @FXML private TextField Course;
-    @FXML private TextField School;
-    @FXML private TextField Level;
-    @FXML private TextField Building_Name;
-
-    public void onClick(ActionEvent actionEvent)
-    {
+    public void onClick(ActionEvent actionEvent) {
 
         int BSN = parseInt(this.BSN.getText());
         String Name = this.Name.getText();
@@ -156,28 +159,40 @@ public class Controller
         System.out.println("Done");
     }
 
-    @FXML private TextField P_ID;
-    @FXML private TextField Budget;
-    @FXML private TextField Total_Amount_Of_Allocated_Hours;
-    @FXML private TextField Building_Name;
-    @FXML private TextField BSN1;
-    @FXML private TextField Name1;
-    @FXML private TextField Surname1;
-    @FXML private TextField Building_Name1;
-    ArrayList lijst;
+    //ADD PROJECT
 
-    public void OnAddProjectClick(ActionEvent actionEvent)
-    {
-        int P_ID = parseInt(this.P_ID.getText());
-        float Budget = Float.parseFloat(this.Budget.getText());
-        float Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.Total_Amount_Of_Allocated_Hours.getText());
-        String Building_Name = this.Building_Name.getText();
+    @FXML
+    private TextField AP_P_ID;
+    @FXML
+    private TextField AP_Budget;
+    @FXML
+    private TextField AP_Total_Amount_Of_Allocated_Hours;
+    @FXML
+    private TextField AP_Building_Name;
+
+
+    public void OnAddProjectClick(ActionEvent actionEvent) {
+        int P_ID = parseInt(this.AP_P_ID.getText());
+        float Budget = Float.parseFloat(this.AP_Budget.getText());
+        float Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.AP_Total_Amount_Of_Allocated_Hours.getText());
+        String Building_Name = this.AP_Building_Name.getText();
 
 
     }
 
-    public void ModifyEmployee(ActionEvent actionEvent)
-    {
+
+    @FXML
+    private TextField BSN1;
+    @FXML
+    private TextField Name1;
+    @FXML
+    private TextField Surname1;
+    @FXML
+    private TextField Building_Name1;
+
+    ArrayList lijst;
+
+    public void ModifyEmployee(ActionEvent actionEvent) {
         int BSN1 = parseInt(this.BSN1.getText());
         String Name1 = this.Name1.getText();
         String Surname1 = this.Surname1.getText();
@@ -188,14 +203,20 @@ public class Controller
         model.ModifyEmployee(BSN1, Name1, Surname1, Building_Name1);
     }
 
-    @FXML private TextField BSN2;
-    @FXML private TextField Country2;
-    @FXML private TextField Postal_Code2;
-    @FXML private TextField Street_Name2;
-    @FXML private TextField House_Number2;
-    @FXML private TextField City2;
-    public void SearchAddress(ActionEvent actionEvent)
-    {
+    @FXML
+    private TextField BSN2;
+    @FXML
+    private TextField Country2;
+    @FXML
+    private TextField Postal_Code2;
+    @FXML
+    private TextField Street_Name2;
+    @FXML
+    private TextField House_Number2;
+    @FXML
+    private TextField City2;
+
+    public void SearchAddress(ActionEvent actionEvent) {
         int BSN2 = parseInt(this.BSN2.getText());
         Model model = new Model();
         model.connect();
@@ -207,8 +228,7 @@ public class Controller
         City2.setText(lijst.get(4) + "");
     }
 
-    public void ModifyAddress(ActionEvent actionEvent)
-    {
+    public void ModifyAddress(ActionEvent actionEvent) {
         int BSN2 = parseInt(this.BSN2.getText());
         String Country2 = this.Country2.getText();
         String Postal_code2 = this.Postal_Code2.getText();
@@ -217,9 +237,9 @@ public class Controller
         String City2 = this.City2.getText();
         Model model = new Model();
         model.connect();
-        model.ModifyAddress(BSN2, Country2, Postal_code2, Street_Name2, House_Number2,City2);
-    }
-
+        model.ModifyAddress(BSN2, Country2, Postal_code2, Street_Name2, House_Number2, City2);
     }
 
 }
+
+
