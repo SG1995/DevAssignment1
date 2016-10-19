@@ -71,6 +71,27 @@ public class Model
         }
     }
 
+    public void AddProject(int P_ID, float Budget, float Total_Amount_Of_Allocated_Hours, String Building_Name)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String ProjectQuery = "INSERT INTO Project(P_ID, Budget, Total_Amount_Of_Allocated_Hours, Building_Name) " +
+                                      "VALUES(" + P_ID + ", " + Budget + ", " + Total_Amount_Of_Allocated_Hours + ", " + "'" + Building_Name + "'" + ");";
+                statement.execute(ProjectQuery);
+                conn.close();
+            } catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     public ArrayList SearchPersonal(int BSN1)
     {
         try

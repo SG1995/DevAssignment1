@@ -171,13 +171,17 @@ public class Controller
     private TextField AP_Building_Name;
 
 
-    public void OnAddProjectClick(ActionEvent actionEvent) {
-        int P_ID = parseInt(this.AP_P_ID.getText());
-        float Budget = Float.parseFloat(this.AP_Budget.getText());
-        float Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.AP_Total_Amount_Of_Allocated_Hours.getText());
-        String Building_Name = this.AP_Building_Name.getText();
+    public void OnAddProjectClick(ActionEvent actionEvent)
+    {
+        int AP_P_ID = parseInt(this.AP_P_ID.getText());
+        float AP_Budget = Float.parseFloat(this.AP_Budget.getText());
+        float AP_Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.AP_Total_Amount_Of_Allocated_Hours.getText());
+        String AP_Building_Name = this.AP_Building_Name.getText();
 
-
+        Model model = new Model();
+        model.connect();
+        model.AddProject(AP_P_ID, AP_Budget, AP_Total_Amount_Of_Allocated_Hours, AP_Building_Name);
+        System.out.println("Done");
     }
 
 
