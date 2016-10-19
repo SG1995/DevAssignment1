@@ -95,6 +95,26 @@ public class Controller
         }
     }
 
+    public void DeleteProjectView(ActionEvent actionEvent)
+    {
+        try
+        {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeleteProjectView.fxml"));
+            //Place fxml in Parent.
+            Parent root1 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("DeleteProject");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     public void ModifyPersonalView(ActionEvent actionEvent) {
         try {
             //load the fxml in fxmlloader.
@@ -293,6 +313,16 @@ public class Controller
         Model model = new Model();
         model.connect();
         model.ModifyProject(MP_P_ID, MP_Budget, MP_Total_Amount_Of_Allocated_Hours, MP_Building_Name);
+    }
+
+    @FXML
+    private TextField DP_P_ID;
+    public void DeleteProject (ActionEvent actionEvent)
+    {
+        int DeleteProject = parseInt(this.DP_P_ID.getText());
+        Model model = new Model();
+        model.connect();
+        model.DeleteProject(DeleteProject);
     }
 }
 

@@ -207,6 +207,28 @@ public class Model
             e.printStackTrace();
         }
     }
+    public void DeleteProject(int P_ID)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String DeleteProjectQuery = "DELETE FROM Project WHERE P_ID = " + P_ID + ";";
+                statement.execute(DeleteProjectQuery);
+                System.out.println("Done");
+                conn.close();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 
     public void ModifyEmployee(int BSN1, String Name1, String Surname1, String Building_Name1)
     {
