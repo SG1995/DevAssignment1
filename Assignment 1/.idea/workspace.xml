@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample/ModifyProjectView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/MainView.fxml" afterPath="$PROJECT_DIR$/src/sample/MainView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Model.java" afterPath="$PROJECT_DIR$/src/sample/Model.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -71,42 +74,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="183" column="32" selection-start-line="183" selection-start-column="32" selection-end-line="183" selection-end-column="32" />
+            <state relative-caret-position="439">
+              <caret line="284" column="48" selection-start-line="284" selection-start-column="48" selection-end-line="284" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
                 <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+                <element signature="method#onClick#0;class#Controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="80" column="85" selection-start-line="80" selection-start-column="85" selection-end-line="80" selection-end-column="85" />
+            <state relative-caret-position="357">
+              <caret line="217" column="57" selection-start-line="217" selection-start-column="57" selection-end-line="217" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Model#0" expanded="false" />
                 <element signature="method#connect#0;class#Model#0" expanded="false" />
+                <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
+                <element signature="method#AddProject#0;class#Model#0" expanded="false" />
+                <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
                 <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
                 <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-                <marker date="1476879940287" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
-                <marker date="1476879940287" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
-                <marker date="1476879940287" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
-                <marker date="1476879940287" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
-                <marker date="1476879940287" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
-                <marker date="1476879940287" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
-                <marker date="1476879940287" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
-                <marker date="1476879940287" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
-                <marker date="1476879940287" expanded="true" signature="5619:5774" ph="UPDATE Emplo... " />
-                <marker date="1476879940287" expanded="true" signature="6558:6817" ph="UPDATE Addre... " />
-                <marker date="1476879940287" expanded="true" signature="7375:7395" ph="SELECT * FRO... Degree" />
+                <marker date="1476884207468" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
+                <marker date="1476884207468" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
+                <marker date="1476884207468" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
+                <marker date="1476884207468" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
+                <marker date="1476884207468" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
+                <marker date="1476884207468" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
+                <marker date="1476884207468" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
+                <marker date="1476884207468" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
+                <marker date="1476884207468" expanded="true" signature="5580:5750" ph="SELECT * FRO... Project" />
+                <marker date="1476884207468" expanded="true" signature="6611:6766" ph="UPDATE Emplo... " />
+                <marker date="1476884207468" expanded="true" signature="7550:7809" ph="UPDATE Addre... " />
+                <marker date="1476884207468" expanded="true" signature="8367:8387" ph="SELECT * FRO... Degree" />
               </folding>
             </state>
           </provider>
@@ -117,6 +125,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModifyProjectView.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ModifyProjectView.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -141,8 +162,8 @@
       <file leaf-file-name="MainView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state relative-caret-position="469">
+              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -186,11 +207,12 @@
         <option value="$PROJECT_DIR$/src/sample/AddEmployeeModel.java" />
         <option value="$PROJECT_DIR$/src/sample/ModifyEmployeeController.java" />
         <option value="$PROJECT_DIR$/src/sample/AddEmployeeController.java" />
-        <option value="$PROJECT_DIR$/src/sample/MainView.fxml" />
         <option value="$PROJECT_DIR$/src/sample/AddProjectView.fxml" />
         <option value="$PROJECT_DIR$/src/sample/AddProjectModel.java" />
-        <option value="$PROJECT_DIR$/src/sample/Model.java" />
+        <option value="$PROJECT_DIR$/src/sample/MainView.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/ModifyProjectView.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Model.java" />
       </list>
     </option>
   </component>
@@ -766,12 +788,12 @@
       <workItem from="1476719596139" duration="29654000" />
       <workItem from="1476793352657" duration="579000" />
       <workItem from="1476871062685" duration="3648000" />
-      <workItem from="1476877703733" duration="2332000" />
+      <workItem from="1476877703733" duration="7040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45322000" />
+    <option name="totallyTimeSpent" value="50030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -822,7 +844,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -840,28 +862,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/AddProjectView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -912,6 +912,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -924,19 +925,23 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Model#0" expanded="false" />
             <element signature="method#connect#0;class#Model#0" expanded="false" />
+            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
+            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
+            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
             <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
             <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <marker date="1476879940287" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
-            <marker date="1476879940287" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
-            <marker date="1476879940287" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
-            <marker date="1476879940287" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
-            <marker date="1476879940287" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
-            <marker date="1476879940287" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
-            <marker date="1476879940287" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
-            <marker date="1476879940287" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
-            <marker date="1476879940287" expanded="true" signature="5619:5774" ph="UPDATE Emplo... " />
-            <marker date="1476879940287" expanded="true" signature="6558:6817" ph="UPDATE Addre... " />
-            <marker date="1476879940287" expanded="true" signature="7375:7395" ph="SELECT * FRO... Degree" />
+            <marker date="1476884207468" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
+            <marker date="1476884207468" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
+            <marker date="1476884207468" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
+            <marker date="1476884207468" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
+            <marker date="1476884207468" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
+            <marker date="1476884207468" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
+            <marker date="1476884207468" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
+            <marker date="1476884207468" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
+            <marker date="1476884207468" expanded="true" signature="5580:5750" ph="SELECT * FRO... Project" />
+            <marker date="1476884207468" expanded="true" signature="6611:6766" ph="UPDATE Emplo... " />
+            <marker date="1476884207468" expanded="true" signature="7550:7809" ph="UPDATE Addre... " />
+            <marker date="1476884207468" expanded="true" signature="8367:8387" ph="SELECT * FRO... Degree" />
           </folding>
         </state>
       </provider>
@@ -968,6 +973,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1000,6 +1006,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1012,19 +1019,23 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Model#0" expanded="false" />
             <element signature="method#connect#0;class#Model#0" expanded="false" />
+            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
+            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
+            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
             <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
             <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <marker date="1476879940287" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
-            <marker date="1476879940287" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
-            <marker date="1476879940287" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
-            <marker date="1476879940287" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
-            <marker date="1476879940287" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
-            <marker date="1476879940287" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
-            <marker date="1476879940287" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
-            <marker date="1476879940287" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
-            <marker date="1476879940287" expanded="true" signature="5619:5774" ph="UPDATE Emplo... " />
-            <marker date="1476879940287" expanded="true" signature="6558:6817" ph="UPDATE Addre... " />
-            <marker date="1476879940287" expanded="true" signature="7375:7395" ph="SELECT * FRO... Degree" />
+            <marker date="1476884207468" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
+            <marker date="1476884207468" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
+            <marker date="1476884207468" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
+            <marker date="1476884207468" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
+            <marker date="1476884207468" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
+            <marker date="1476884207468" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
+            <marker date="1476884207468" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
+            <marker date="1476884207468" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
+            <marker date="1476884207468" expanded="true" signature="5580:5750" ph="SELECT * FRO... Project" />
+            <marker date="1476884207468" expanded="true" signature="6611:6766" ph="UPDATE Emplo... " />
+            <marker date="1476884207468" expanded="true" signature="7550:7809" ph="UPDATE Addre... " />
+            <marker date="1476884207468" expanded="true" signature="8367:8387" ph="SELECT * FRO... Degree" />
           </folding>
         </state>
       </provider>
@@ -1056,6 +1067,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,19 +1080,23 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Model#0" expanded="false" />
             <element signature="method#connect#0;class#Model#0" expanded="false" />
+            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
+            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
+            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
             <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
             <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <marker date="1476879940287" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
-            <marker date="1476879940287" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
-            <marker date="1476879940287" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
-            <marker date="1476879940287" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
-            <marker date="1476879940287" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
-            <marker date="1476879940287" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
-            <marker date="1476879940287" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
-            <marker date="1476879940287" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
-            <marker date="1476879940287" expanded="true" signature="5619:5774" ph="UPDATE Emplo... " />
-            <marker date="1476879940287" expanded="true" signature="6558:6817" ph="UPDATE Addre... " />
-            <marker date="1476879940287" expanded="true" signature="7375:7395" ph="SELECT * FRO... Degree" />
+            <marker date="1476884207468" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
+            <marker date="1476884207468" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
+            <marker date="1476884207468" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
+            <marker date="1476884207468" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
+            <marker date="1476884207468" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
+            <marker date="1476884207468" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
+            <marker date="1476884207468" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
+            <marker date="1476884207468" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
+            <marker date="1476884207468" expanded="true" signature="5580:5750" ph="SELECT * FRO... Project" />
+            <marker date="1476884207468" expanded="true" signature="6611:6766" ph="UPDATE Emplo... " />
+            <marker date="1476884207468" expanded="true" signature="7550:7809" ph="UPDATE Addre... " />
+            <marker date="1476884207468" expanded="true" signature="8367:8387" ph="SELECT * FRO... Degree" />
           </folding>
         </state>
       </provider>
@@ -1112,6 +1128,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1143,6 +1160,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1174,6 +1192,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1244,17 +1263,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeController.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeView.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ModidyEmployeeModel.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeView.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1269,6 +1277,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AddProjectModel.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AddProjectView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1280,39 +1307,55 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ModifyProjectView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="80" column="85" selection-start-line="80" selection-start-column="85" selection-end-line="80" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Model#0" expanded="false" />
-            <element signature="method#connect#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
-            <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <marker date="1476879940287" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
-            <marker date="1476879940287" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
-            <marker date="1476879940287" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
-            <marker date="1476879940287" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
-            <marker date="1476879940287" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
-            <marker date="1476879940287" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
-            <marker date="1476879940287" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
-            <marker date="1476879940287" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
-            <marker date="1476879940287" expanded="true" signature="5619:5774" ph="UPDATE Emplo... " />
-            <marker date="1476879940287" expanded="true" signature="6558:6817" ph="UPDATE Addre... " />
-            <marker date="1476879940287" expanded="true" signature="7375:7395" ph="SELECT * FRO... Degree" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="183" column="32" selection-start-line="183" selection-start-column="32" selection-end-line="183" selection-end-column="32" />
+        <state relative-caret-position="439">
+          <caret line="284" column="48" selection-start-line="284" selection-start-column="48" selection-end-line="284" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
             <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
+            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="217" column="57" selection-start-line="217" selection-start-column="57" selection-end-line="217" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Model#0" expanded="false" />
+            <element signature="method#connect#0;class#Model#0" expanded="false" />
+            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
+            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
+            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
+            <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
+            <element signature="method#insertTest#0;class#Model#0" expanded="false" />
+            <marker date="1476884207468" expanded="true" signature="1136:1329" ph="INSERT INTO Employee... " />
+            <marker date="1476884207468" expanded="true" signature="1360:1580" ph="INSERT INTO Address... " />
+            <marker date="1476884207468" expanded="true" signature="1610:1717" ph="INSERT INTO Degree... " />
+            <marker date="1476884207468" expanded="true" signature="1750:1889" ph="INSERT INTO E_Address... " />
+            <marker date="1476884207468" expanded="true" signature="1921:2043" ph="INSERT INTO E_Degree... " />
+            <marker date="1476884207468" expanded="true" signature="2764:3001" ph="INSERT INTO Project... " />
+            <marker date="1476884207468" expanded="true" signature="3458:3520" ph="SELECT Name,... Employee" />
+            <marker date="1476884207468" expanded="true" signature="4377:4608" ph="SELECT a.Cou... Address" />
+            <marker date="1476884207468" expanded="true" signature="5580:5750" ph="SELECT * FRO... Project" />
+            <marker date="1476884207468" expanded="true" signature="6611:6766" ph="UPDATE Emplo... " />
+            <marker date="1476884207468" expanded="true" signature="7550:7809" ph="UPDATE Addre... " />
+            <marker date="1476884207468" expanded="true" signature="8367:8387" ph="SELECT * FRO... Degree" />
           </folding>
         </state>
       </provider>

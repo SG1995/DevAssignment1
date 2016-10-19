@@ -158,6 +158,35 @@ public class Model
         return null;
     }
 
+    public ArrayList SearchProject(int P_ID)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String SearchProjectQuery = "SELECT Budget, Total_Amount_Of_Allocated_Hours, Building_Name" +
+                        "             FROM Project" +
+                        "             WHERE P_ID = " + P_ID + ";";
+                resultSet = statement.executeQuery(SearchProjectQuery);
+                resultSet.next();
+                ArrayList arrayList = new ArrayList();
+                arrayList.add(resultSet.getString(1));
+                arrayList.add(resultSet.getString(2));
+                arrayList.add(resultSet.getString(3));
+                conn.close();
+                return arrayList;
+            } catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public void ModifyEmployee(int BSN1, String Name1, String Surname1, String Building_Name1)
     {
         try

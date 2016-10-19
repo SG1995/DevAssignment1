@@ -69,7 +69,28 @@ public class Controller
             // pick parent to set on stage and show.
             stage.setScene(new Scene(root1));
             stage.show();
-        } catch (Exception e) {
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public void ModifyProjectView(ActionEvent actionEvent)
+    {
+        try
+        {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ModifyProjectView.fxml"));
+            //Place fxml in Parent.
+            Parent root1 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("ModifyProject");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e)
+        {
             e.printStackTrace();
         }
     }
@@ -242,6 +263,26 @@ public class Controller
         Model model = new Model();
         model.connect();
         model.ModifyAddress(BSN2, Country2, Postal_code2, Street_Name2, House_Number2, City2);
+    }
+
+    @FXML
+    private TextField MP_P_ID;
+    @FXML
+    private TextField MP_Budget;
+    @FXML
+    private TextField MP_Total_Amount_Of_Allocated_Hours;
+    @FXML
+    private TextField MP_Building_Name;
+
+    public void SearchProject(ActionEvent actionEvent)
+    {
+        int P_ID = parseInt(this.MP_P_ID.getText());
+        Model model = new Model();
+        model.connect();
+        ArrayList arrayList = model.SearchProject(P_ID);
+        MP_Budget.setText(arrayList.get(0) + "");
+        MP_Total_Amount_Of_Allocated_Hours.setText(arrayList.get(1) + "");
+        MP_Building_Name.setText(arrayList.get(2) + "");
     }
 
 }
