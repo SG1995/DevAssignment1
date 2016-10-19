@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static java.lang.Integer.getInteger;
 import static java.lang.Integer.parseInt;
 
 public class Controller
@@ -60,6 +61,19 @@ public class Controller
         }
     }
 
+    public void AddProjectView(ActionEvent actionEvent)
+    {
+        try{
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AddProjectView.fxml"));
+            //Place fxml in Parent.
+            Parent root1 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("AddProject");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root1));
+            stage.show();
     public void ModifyPersonalView(ActionEvent actionEvent)
     {
         try{
@@ -96,6 +110,10 @@ public class Controller
         }
     }
 
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 
 
     // ABOVE THIS LINE ARE VIEWS, BELOW ARE EVENTS
@@ -138,21 +156,22 @@ public class Controller
         System.out.println("Done");
     }
 
+    @FXML private TextField P_ID;
+    @FXML private TextField Budget;
+    @FXML private TextField Total_Amount_Of_Allocated_Hours;
+    @FXML private TextField Building_Name;
     @FXML private TextField BSN1;
     @FXML private TextField Name1;
     @FXML private TextField Surname1;
     @FXML private TextField Building_Name1;
     ArrayList lijst;
 
-    public void SearchPersonal(ActionEvent actionEvent)
+    public void OnAddProjectClick(ActionEvent actionEvent)
     {
-        int BSN1 = parseInt(this.BSN1.getText());
-        Model model = new Model();
-        model.connect();
-        lijst = model.SearchPersonal(BSN1);
-        Name1.setText(lijst.get(0) + "");
-        Surname1.setText(lijst.get(1) + "");
-        Building_Name1.setText(lijst.get(2) + "");
+        int P_ID = parseInt(this.P_ID.getText());
+        float Budget = Float.parseFloat(this.Budget.getText());
+        float Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.Total_Amount_Of_Allocated_Hours.getText());
+        String Building_Name = this.Building_Name.getText();
 
 
     }
@@ -200,4 +219,7 @@ public class Controller
         model.connect();
         model.ModifyAddress(BSN2, Country2, Postal_code2, Street_Name2, House_Number2,City2);
     }
+
+    }
+
 }
