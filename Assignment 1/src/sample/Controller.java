@@ -276,15 +276,24 @@ public class Controller
 
     public void SearchProject(ActionEvent actionEvent)
     {
-        int P_ID = parseInt(this.MP_P_ID.getText());
+        int MP_P_ID = parseInt(this.MP_P_ID.getText());
         Model model = new Model();
         model.connect();
-        ArrayList arrayList = model.SearchProject(P_ID);
+        ArrayList arrayList = model.SearchProject(MP_P_ID);
         MP_Budget.setText(arrayList.get(0) + "");
         MP_Total_Amount_Of_Allocated_Hours.setText(arrayList.get(1) + "");
         MP_Building_Name.setText(arrayList.get(2) + "");
     }
-
+    public void ModifyProject (ActionEvent actionEvent)
+    {
+        int MP_P_ID = parseInt(this.MP_P_ID.getText());
+        float MP_Budget = Float.parseFloat(this.MP_Budget.getText());
+        float MP_Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.MP_Total_Amount_Of_Allocated_Hours.getText());
+        String MP_Building_Name = this.MP_Building_Name.getText();
+        Model model = new Model();
+        model.connect();
+        model.ModifyProject(MP_P_ID, MP_Budget, MP_Total_Amount_Of_Allocated_Hours, MP_Building_Name);
+    }
 }
 
 

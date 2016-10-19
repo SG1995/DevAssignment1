@@ -186,6 +186,27 @@ public class Model
         }
         return null;
     }
+    public void ModifyProject(int P_ID, float Budget, float Total_Amount_Of_Allocated_Hours, String Building_Name)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String ModifyProjectQuery = "UPDATE Project Set Budget = " + Budget + ", Total_Amount_Of_Allocated_Hours = " + Total_Amount_Of_Allocated_Hours + ", Building_Name = " + "'" + Building_Name + "'" +
+                        "                    WHERE P_ID = " + P_ID + ";";
+                statement.execute(ModifyProjectQuery);
+                System.out.println("Done");
+                conn.close();
+            }catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 
     public void ModifyEmployee(int BSN1, String Name1, String Surname1, String Building_Name1)
     {
