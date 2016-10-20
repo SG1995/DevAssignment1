@@ -1,5 +1,6 @@
 package sample;
 import javafx.collections.ObservableList;
+import javafx.scene.control.TextArea;
 
 import java.rmi.server.ExportException;
 import java.sql.*;
@@ -378,6 +379,65 @@ public class Model
             {
                String DeleteBSN = "DELETE FROM Employee WHERE BSN = " + deleteBSN + ";";
                 statement.execute(DeleteBSN);
+                System.out.println("Done");
+                conn.close();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public ArrayList FillComboBox()
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String FindProjects = "SELECT P_ID FROM Project;";
+                resultSet = statement.executeQuery(FindProjects);
+                ArrayList list = new ArrayList();
+
+
+                while(resultSet.next())
+                {
+
+                  list.add(resultSet.getString(1));
+                }
+                conn.close();
+                return list;
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public void AddEmployeeToProject(int BSN3, String Position, String Description, float Hourly_Fee, String P_ID)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String E_Position = "INSERT INTO E_Position VALUES (" + BSN3 + ", '" + Position + "',"+ Hourly_Fee+ " );";
+                String Pos_Description = "INSERT INTO Pos_Description VALUES (" + BSN3 + ", '" + Position + "', '"+ Description+ "');";
+                String Proj_Pos = "INSERT INTO Proj_Pos VALUES (" + BSN3 + ", '" + Position + "',"+ P_ID + " );";
+                statement.execute(E_Position);
+                statement.execute(Pos_Description);
+                statement.execute(Proj_Pos);
                 System.out.println("Done");
                 conn.close();
             }
