@@ -218,6 +218,32 @@ public class Model
         }
         return null;
     }
+
+    public ArrayList ViewRent() {
+        try {
+            Statement statement = conn.createStatement();
+            try {
+                String ViewRentQuery = "SELECT p.P_ID, p.Total_Amount_Of_Allocated_Hours, p.Building_Name, p.Budget, h.Monthly_Rent FROM Project p, Headquarters h WHERE p.Building_Name = h.Building_Name AND h.Monthly_Rent > (p.Budget * 0.10);";
+                resultSet = statement.executeQuery(ViewRentQuery);
+                resultSet.next();
+                ArrayList arrayList = new ArrayList();
+                arrayList.add(resultSet.getString(1));
+                arrayList.add(resultSet.getString(2));
+                arrayList.add(resultSet.getString(3));
+                arrayList.add(resultSet.getString(4));
+                arrayList.add(resultSet.getString(5));
+                conn.close();
+                return arrayList;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public void ModifyProject(int P_ID, float Budget, float Total_Amount_Of_Allocated_Hours, String Building_Name)
     {
         try
