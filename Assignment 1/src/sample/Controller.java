@@ -185,6 +185,59 @@ public class Controller
         }
     }
 
+    public void RentView(ActionEvent actionEvent)
+    {
+        try {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RentView.fxml"));
+            //Place fxml in Parent.
+            Parent root2 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("View Projects That Cannot Pay Rent");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root2));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void NMVView()
+    {
+        try {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("NMVView.fxml"));
+            //Place fxml in Parent.
+            Parent root2 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("Error");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root2));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void DoneView()
+    {
+        try {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DoneView.fxml"));
+            //Place fxml in Parent.
+            Parent root2 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("Done!");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root2));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     // ABOVE THIS LINE ARE VIEWS, BELOW ARE EVENTS
 
@@ -259,6 +312,7 @@ public class Controller
         model.connect();
         model.AddProject(AP_P_ID, AP_Budget, AP_Total_Amount_Of_Allocated_Hours, AP_Building_Name);
         System.out.println("Done");
+        DoneView();
     }
 
 
@@ -419,6 +473,36 @@ public class Controller
         Model model = new Model();
         model.connect();
         model.DeleteProject(DeleteProject);
+        DoneView();
+    }
+
+    @FXML
+    private TextField R_P_ID;
+    @FXML
+    private TextField R_Total_Amount_of_Allocated_Hours;
+    @FXML
+    private TextField R_Building_Name;
+    @FXML
+    private TextField R_Budget;
+    @FXML
+    private TextField R_Monthly_Rent;
+
+    public void ViewProjectsThatCannotPayRent()
+    {
+        Model model = new Model();
+        model.connect();
+        ArrayList listOfProjects = model.ViewRent();
+        try
+        {
+            R_P_ID.setText(listOfProjects.get(0) + "");
+            R_Total_Amount_of_Allocated_Hours.setText(listOfProjects.get(1) + "");
+            R_Building_Name.setText(listOfProjects.get(2) + "");
+            R_Budget.setText(listOfProjects.get(3) + "");
+            R_Monthly_Rent.setText(listOfProjects.get(4) + "");
+        }catch (Exception e)
+        {
+            NMVView();
+        }
     }
 }
 
