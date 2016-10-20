@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample/DeleteEmployeeView.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sample/ModifyEmployeeDegreeView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 1/sample/Controller.class" afterPath="$PROJECT_DIR$/out/production/Assignment 1/sample/Controller.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 1/sample/Model.class" afterPath="$PROJECT_DIR$/out/production/Assignment 1/sample/Model.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 1/sample/AddProjectView.fxml" afterPath="$PROJECT_DIR$/out/production/Assignment 1/sample/AddProjectView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 1/sample/MainView.fxml" afterPath="$PROJECT_DIR$/out/production/Assignment 1/sample/MainView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 1/sample/ModifyEmployeeMainView.fxml" afterPath="$PROJECT_DIR$/out/production/Assignment 1/sample/ModifyEmployeeMainView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/MainView.fxml" afterPath="$PROJECT_DIR$/src/sample/MainView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Model.java" afterPath="$PROJECT_DIR$/src/sample/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/ModifyEmployeeMainView.fxml" afterPath="$PROJECT_DIR$/src/sample/ModifyEmployeeMainView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment 1/sample/DeleteProjectView.fxml" afterPath="$PROJECT_DIR$/out/production/Assignment 1/sample/DeleteProjectView.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,6 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -78,186 +70,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteEmployeeView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/DeleteEmployeeView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModifyEmployeeMainView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeMainView.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModifyEmployeePersonalView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeePersonalView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="334" column="16" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="16" />
-            <state relative-caret-position="4624">
-              <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-                <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-                <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-                <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-                <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-                <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-                <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-                <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-                <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-                <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-                <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-                <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
-      <file leaf-file-name="DeleteProjectView.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/DeleteProjectView.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="299" column="5" selection-start-line="299" selection-start-column="5" selection-end-line="299" selection-end-column="5" />
-            <state relative-caret-position="1785">
-              <caret line="230" column="5" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#Model#0" expanded="false" />
-                <element signature="method#connect#0;class#Model#0" expanded="false" />
-                <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-                <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-                <element signature="method#SearchDegree#0;class#Model#0" expanded="false" />
-                <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-                <element signature="method#AddProject#0;class#Model#0" expanded="false" />
-                <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
-                <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-                <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
-                <element signature="method#ModifyAddress#0;class#Model#0" expanded="false" />
-                <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-                <element signature="method#ModifyDegree#0;class#Model#0" expanded="false" />
-                <marker date="1476885687661" expanded="true" signature="1176:1369" ph="INSERT INTO Employee... " />
-                <marker date="1476885687661" expanded="true" signature="1400:1620" ph="INSERT INTO Address... " />
-                <marker date="1476885687661" expanded="true" signature="1650:1757" ph="INSERT INTO Degree... " />
-                <marker date="1476885687661" expanded="true" signature="1790:1929" ph="INSERT INTO E_Address... " />
-                <marker date="1476885687661" expanded="true" signature="1961:2083" ph="INSERT INTO E_Degree... " />
-                <marker date="1476885687661" expanded="true" signature="2722:2784" ph="SELECT Name,... Employee" />
-                <marker date="1476885687661" expanded="true" signature="3641:3872" ph="SELECT a.Cou... Address" />
-                <marker date="1476885687661" expanded="true" signature="4826:4881" ph="SELECT Cours... E_Degree" />
-                <marker date="1476885687661" expanded="true" signature="5736:5891" ph="UPDATE Emplo... " />
-                <marker date="1476885687661" expanded="true" signature="6550:6836" ph="UPDATE Addre... " />
-                <marker date="1476885687661" expanded="true" signature="7335:7355" ph="SELECT * FRO... Degree" />
-                <marker date="1476885687661" expanded="true" signature="8359:8651" ph="UPDATE Degre... " />
-                <marker date="1476885687661" expanded="true" signature="9184:9217" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModifyEmployeeDegreeView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeDegreeView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModifyProjectView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ModifyProjectView.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="236" selection-start-line="6" selection-start-column="204" selection-end-line="6" selection-end-column="236" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddEmployeeView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeView.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -322,10 +134,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -357,11 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -400,7 +207,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,13 +252,8 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method />
@@ -468,13 +272,8 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -747,9 +546,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -836,19 +632,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
@@ -913,16 +696,14 @@
       <workItem from="1476877703733" duration="8314000" />
       <workItem from="1476897800383" duration="1468000" />
       <workItem from="1476952050406" duration="14000" />
+      <workItem from="1476952713520" duration="71000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50376000" />
-    <option name="totallyTimeSpent" value="52786000" />
+    <option name="totallyTimeSpent" value="52857000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
@@ -933,7 +714,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18221734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21734358" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2896406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -944,7 +724,6 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -973,7 +752,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
       <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager>
@@ -992,670 +770,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeView.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Model#0" expanded="false" />
-            <element signature="method#connect#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyDegree#0;class#Model#0" expanded="false" />
-            <marker date="1476885687661" expanded="true" signature="1176:1369" ph="INSERT INTO Employee... " />
-            <marker date="1476885687661" expanded="true" signature="1400:1620" ph="INSERT INTO Address... " />
-            <marker date="1476885687661" expanded="true" signature="1650:1757" ph="INSERT INTO Degree... " />
-            <marker date="1476885687661" expanded="true" signature="1790:1929" ph="INSERT INTO E_Address... " />
-            <marker date="1476885687661" expanded="true" signature="1961:2083" ph="INSERT INTO E_Degree... " />
-            <marker date="1476885687661" expanded="true" signature="2722:2784" ph="SELECT Name,... Employee" />
-            <marker date="1476885687661" expanded="true" signature="3641:3872" ph="SELECT a.Cou... Address" />
-            <marker date="1476885687661" expanded="true" signature="4826:4881" ph="SELECT Cours... E_Degree" />
-            <marker date="1476885687661" expanded="true" signature="5736:5891" ph="UPDATE Emplo... " />
-            <marker date="1476885687661" expanded="true" signature="6550:6836" ph="UPDATE Addre... " />
-            <marker date="1476885687661" expanded="true" signature="7335:7355" ph="SELECT * FRO... Degree" />
-            <marker date="1476885687661" expanded="true" signature="8359:8651" ph="UPDATE Degre... " />
-            <marker date="1476885687661" expanded="true" signature="9184:9217" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Model#0" expanded="false" />
-            <element signature="method#connect#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyDegree#0;class#Model#0" expanded="false" />
-            <marker date="1476885687661" expanded="true" signature="1176:1369" ph="INSERT INTO Employee... " />
-            <marker date="1476885687661" expanded="true" signature="1400:1620" ph="INSERT INTO Address... " />
-            <marker date="1476885687661" expanded="true" signature="1650:1757" ph="INSERT INTO Degree... " />
-            <marker date="1476885687661" expanded="true" signature="1790:1929" ph="INSERT INTO E_Address... " />
-            <marker date="1476885687661" expanded="true" signature="1961:2083" ph="INSERT INTO E_Degree... " />
-            <marker date="1476885687661" expanded="true" signature="2722:2784" ph="SELECT Name,... Employee" />
-            <marker date="1476885687661" expanded="true" signature="3641:3872" ph="SELECT a.Cou... Address" />
-            <marker date="1476885687661" expanded="true" signature="4826:4881" ph="SELECT Cours... E_Degree" />
-            <marker date="1476885687661" expanded="true" signature="5736:5891" ph="UPDATE Emplo... " />
-            <marker date="1476885687661" expanded="true" signature="6550:6836" ph="UPDATE Addre... " />
-            <marker date="1476885687661" expanded="true" signature="7335:7355" ph="SELECT * FRO... Degree" />
-            <marker date="1476885687661" expanded="true" signature="8359:8651" ph="UPDATE Degre... " />
-            <marker date="1476885687661" expanded="true" signature="9184:9217" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Model#0" expanded="false" />
-            <element signature="method#connect#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyDegree#0;class#Model#0" expanded="false" />
-            <marker date="1476885687661" expanded="true" signature="1176:1369" ph="INSERT INTO Employee... " />
-            <marker date="1476885687661" expanded="true" signature="1400:1620" ph="INSERT INTO Address... " />
-            <marker date="1476885687661" expanded="true" signature="1650:1757" ph="INSERT INTO Degree... " />
-            <marker date="1476885687661" expanded="true" signature="1790:1929" ph="INSERT INTO E_Address... " />
-            <marker date="1476885687661" expanded="true" signature="1961:2083" ph="INSERT INTO E_Degree... " />
-            <marker date="1476885687661" expanded="true" signature="2722:2784" ph="SELECT Name,... Employee" />
-            <marker date="1476885687661" expanded="true" signature="3641:3872" ph="SELECT a.Cou... Address" />
-            <marker date="1476885687661" expanded="true" signature="4826:4881" ph="SELECT Cours... E_Degree" />
-            <marker date="1476885687661" expanded="true" signature="5736:5891" ph="UPDATE Emplo... " />
-            <marker date="1476885687661" expanded="true" signature="6550:6836" ph="UPDATE Addre... " />
-            <marker date="1476885687661" expanded="true" signature="7335:7355" ph="SELECT * FRO... Degree" />
-            <marker date="1476885687661" expanded="true" signature="8359:8651" ph="UPDATE Degre... " />
-            <marker date="1476885687661" expanded="true" signature="9184:9217" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignment 1.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/Driver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/fabric/jdbc/FabricMySQLDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/javafx-src.zip!/javafx/scene/control/TextInputControl.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_74/javafx-src.zip!/javafx/application/Application.java" />
-    <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="990" column="0" selection-start-line="990" selection-start-column="0" selection-end-line="990" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/View.java" />
-    <entry file="jar://$PROJECT_DIR$/Driver/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar!/com/mysql/jdbc/Util.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="276" column="0" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeController.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeView.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/ModidyEmployeeModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    <entry file="file://$PROJECT_DIR$/src/sample/ModidyEmployeeModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="52" />
-        <state relative-caret-position="459">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddProjectModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/AddProjectView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeePersonalView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddProjectModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/AddEmployeeModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeDegreeView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeMainView.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    <entry file="file://$PROJECT_DIR$/src/sample/AddProjectView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="391">
           <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DeleteEmployeeView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/DeleteEmployeeView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="340">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ModifyProjectView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="236" selection-start-line="6" selection-start-column="204" selection-end-line="6" selection-end-column="236" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="230" column="5" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Model#0" expanded="false" />
-            <element signature="method#connect#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#AddProject#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchPersonal#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeeMainView.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="334" column="16" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="16" />
-        <state relative-caret-position="4624">
-          <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AddEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployeeMainView#0;class#Controller#0" expanded="false" />
-            <element signature="method#AddProjectView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyPersonalView#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddressView#0;class#Controller#0" expanded="false" />
-            <element signature="method#DeleteEmployeeView#0;class#Controller#0" expanded="false" />
-            <element signature="method#onClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#OnAddProjectClick#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Controller#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Model.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ModifyEmployeePersonalView.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="299" column="5" selection-start-line="299" selection-start-column="5" selection-end-line="299" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Model#0" expanded="false" />
-            <element signature="method#connect#0;class#Model#0" expanded="false" />
-            <element signature="method#AddEmployeeDBTest#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#SearchDegree#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyEmployee#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyAddress#0;class#Model#0" expanded="false" />
-            <element signature="method#insertTest#0;class#Model#0" expanded="false" />
-            <element signature="method#ModifyDegree#0;class#Model#0" expanded="false" />
-            <marker date="1476885687661" expanded="true" signature="1176:1369" ph="INSERT INTO Employee... " />
-            <marker date="1476885687661" expanded="true" signature="1400:1620" ph="INSERT INTO Address... " />
-            <marker date="1476885687661" expanded="true" signature="1650:1757" ph="INSERT INTO Degree... " />
-            <marker date="1476885687661" expanded="true" signature="1790:1929" ph="INSERT INTO E_Address... " />
-            <marker date="1476885687661" expanded="true" signature="1961:2083" ph="INSERT INTO E_Degree... " />
-            <marker date="1476885687661" expanded="true" signature="2722:2784" ph="SELECT Name,... Employee" />
-            <marker date="1476885687661" expanded="true" signature="3641:3872" ph="SELECT a.Cou... Address" />
-            <marker date="1476885687661" expanded="true" signature="4826:4881" ph="SELECT Cours... E_Degree" />
-            <marker date="1476885687661" expanded="true" signature="5736:5891" ph="UPDATE Emplo... " />
-            <marker date="1476885687661" expanded="true" signature="6550:6836" ph="UPDATE Addre... " />
-            <marker date="1476885687661" expanded="true" signature="7335:7355" ph="SELECT * FRO... Degree" />
-            <marker date="1476885687661" expanded="true" signature="8359:8651" ph="UPDATE Degre... " />
-            <marker date="1476885687661" expanded="true" signature="9184:9217" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/DeleteProjectView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="425">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
           <folding />
         </state>
       </provider>
