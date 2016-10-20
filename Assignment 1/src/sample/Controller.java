@@ -69,7 +69,48 @@ public class Controller
             // pick parent to set on stage and show.
             stage.setScene(new Scene(root1));
             stage.show();
-        } catch (Exception e) {
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public void ModifyProjectView(ActionEvent actionEvent)
+    {
+        try
+        {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ModifyProjectView.fxml"));
+            //Place fxml in Parent.
+            Parent root1 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("ModifyProject");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public void DeleteProjectView(ActionEvent actionEvent)
+    {
+        try
+        {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeleteProjectView.fxml"));
+            //Place fxml in Parent.
+            Parent root1 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("DeleteProject");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e)
+        {
             e.printStackTrace();
         }
     }
@@ -207,13 +248,17 @@ public class Controller
     private TextField AP_Building_Name;
 
 
-    public void OnAddProjectClick(ActionEvent actionEvent) {
-        int P_ID = parseInt(this.AP_P_ID.getText());
-        float Budget = Float.parseFloat(this.AP_Budget.getText());
-        float Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.AP_Total_Amount_Of_Allocated_Hours.getText());
-        String Building_Name = this.AP_Building_Name.getText();
+    public void OnAddProjectClick(ActionEvent actionEvent)
+    {
+        int AP_P_ID = parseInt(this.AP_P_ID.getText());
+        float AP_Budget = Float.parseFloat(this.AP_Budget.getText());
+        float AP_Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.AP_Total_Amount_Of_Allocated_Hours.getText());
+        String AP_Building_Name = this.AP_Building_Name.getText();
 
-
+        Model model = new Model();
+        model.connect();
+        model.AddProject(AP_P_ID, AP_Budget, AP_Total_Amount_Of_Allocated_Hours, AP_Building_Name);
+        System.out.println("Done");
     }
 
 
@@ -336,6 +381,45 @@ public class Controller
     }
 
 
+    @FXML
+    private TextField MP_P_ID;
+    @FXML
+    private TextField MP_Budget;
+    @FXML
+    private TextField MP_Total_Amount_Of_Allocated_Hours;
+    @FXML
+    private TextField MP_Building_Name;
+
+    public void SearchProject(ActionEvent actionEvent)
+    {
+        int MP_P_ID = parseInt(this.MP_P_ID.getText());
+        Model model = new Model();
+        model.connect();
+        ArrayList arrayList = model.SearchProject(MP_P_ID);
+        MP_Budget.setText(arrayList.get(0) + "");
+        MP_Total_Amount_Of_Allocated_Hours.setText(arrayList.get(1) + "");
+        MP_Building_Name.setText(arrayList.get(2) + "");
+    }
+    public void ModifyProject (ActionEvent actionEvent)
+    {
+        int MP_P_ID = parseInt(this.MP_P_ID.getText());
+        float MP_Budget = Float.parseFloat(this.MP_Budget.getText());
+        float MP_Total_Amount_Of_Allocated_Hours = Float.parseFloat(this.MP_Total_Amount_Of_Allocated_Hours.getText());
+        String MP_Building_Name = this.MP_Building_Name.getText();
+        Model model = new Model();
+        model.connect();
+        model.ModifyProject(MP_P_ID, MP_Budget, MP_Total_Amount_Of_Allocated_Hours, MP_Building_Name);
+    }
+
+    @FXML
+    private TextField DP_P_ID;
+    public void DeleteProject (ActionEvent actionEvent)
+    {
+        int DeleteProject = parseInt(this.DP_P_ID.getText());
+        Model model = new Model();
+        model.connect();
+        model.DeleteProject(DeleteProject);
+    }
 }
 
 

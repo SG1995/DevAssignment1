@@ -72,6 +72,27 @@ public class Model
         }
     }
 
+    public void AddProject(int P_ID, float Budget, float Total_Amount_Of_Allocated_Hours, String Building_Name)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String ProjectQuery = "INSERT INTO Project(P_ID, Budget, Total_Amount_Of_Allocated_Hours, Building_Name) " +
+                                      "VALUES(" + P_ID + ", " + Budget + ", " + Total_Amount_Of_Allocated_Hours + ", " + "'" + Building_Name + "'" + ");";
+                statement.execute(ProjectQuery);
+                conn.close();
+            } catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     public ArrayList SearchPersonal(int BSN1)
     {
         try
@@ -166,6 +187,78 @@ public class Model
             e.printStackTrace();
         }
         return null;
+    }
+
+    public ArrayList SearchProject(int P_ID)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String SearchProjectQuery = "SELECT Budget, Total_Amount_Of_Allocated_Hours, Building_Name" +
+                        "             FROM Project" +
+                        "             WHERE P_ID = " + P_ID + ";";
+                resultSet = statement.executeQuery(SearchProjectQuery);
+                resultSet.next();
+                ArrayList arrayList = new ArrayList();
+                arrayList.add(resultSet.getString(1));
+                arrayList.add(resultSet.getString(2));
+                arrayList.add(resultSet.getString(3));
+                conn.close();
+                return arrayList;
+            } catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    public void ModifyProject(int P_ID, float Budget, float Total_Amount_Of_Allocated_Hours, String Building_Name)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String ModifyProjectQuery = "UPDATE Project Set Budget = " + Budget + ", Total_Amount_Of_Allocated_Hours = " + Total_Amount_Of_Allocated_Hours + ", Building_Name = " + "'" + Building_Name + "'" +
+                        "                    WHERE P_ID = " + P_ID + ";";
+                statement.execute(ModifyProjectQuery);
+                System.out.println("Done");
+                conn.close();
+            }catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+    public void DeleteProject(int P_ID)
+    {
+        try
+        {
+            Statement statement = conn.createStatement();
+            try
+            {
+                String DeleteProjectQuery = "DELETE FROM Project WHERE P_ID = " + P_ID + ";";
+                statement.execute(DeleteProjectQuery);
+                System.out.println("Done");
+                conn.close();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     public void ModifyEmployee(int BSN1, String Name1, String Surname1, String Building_Name1)
