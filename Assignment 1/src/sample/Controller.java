@@ -1,11 +1,17 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -185,6 +191,27 @@ public class Controller
         }
     }
 
+    public void EmployeeToProjectView(ActionEvent actionEvent)
+    {
+        try
+        {
+            //load the fxml in fxmlloader.
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("EmployeeToProjectView.fxml"));
+            //Place fxml in Parent.
+            Parent root2 = (Parent) fxmlLoader.load();
+            //Create Stage and (might) edit stage attributes
+            stage = new Stage();
+            stage.setTitle("EmployeeToProject");
+            // pick parent to set on stage and show.
+            stage.setScene(new Scene(root2));
+            stage.show();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+
     public void RentView(ActionEvent actionEvent)
     {
         try {
@@ -202,6 +229,12 @@ public class Controller
             e.printStackTrace();
         }
     }
+
+
+
+
+
+
 
     public void NMVView()
     {
@@ -474,6 +507,36 @@ public class Controller
         model.connect();
         model.DeleteProject(DeleteProject);
         DoneView();
+    }
+
+    @FXML
+    private ComboBox<String> ComboBox;
+
+    public void FillComboBox(MouseEvent mouseEvent)
+    {
+        Model model = new Model();
+        model.connect();
+        ArrayList list =  model.FillComboBox();
+        ObservableList<String> data = FXCollections.observableArrayList(list);
+        ComboBox.setItems(data);
+    }
+
+    @FXML private TextField BSN3;
+    @FXML private TextField Position;
+    @FXML private TextArea Description;
+    @FXML private TextField Hourly_Fee;
+
+
+    public void AddEmployeeToProject(ActionEvent actionEvent)
+    {
+        int BSN3 = parseInt(this.BSN3.getText());
+        String Position = this.Position.getText();
+        String Description = this.Description.getText();
+        float Hourly_Fee = Float.parseFloat(this.Hourly_Fee.getText());
+        String P_ID = this.ComboBox.getValue();
+        Model model = new Model();
+        model.connect();
+        model.AddEmployeeToProject(BSN3, Position, Description, Hourly_Fee, P_ID);
     }
 
     @FXML
