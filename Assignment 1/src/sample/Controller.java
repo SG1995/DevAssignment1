@@ -193,7 +193,8 @@ public class Controller
 
     public void EmployeeToProjectView(ActionEvent actionEvent)
     {
-        try {
+        try
+        {
             //load the fxml in fxmlloader.
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("EmployeeToProjectView.fxml"));
             //Place fxml in Parent.
@@ -204,6 +205,13 @@ public class Controller
             // pick parent to set on stage and show.
             stage.setScene(new Scene(root2));
             stage.show();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+
     public void RentView(ActionEvent actionEvent)
     {
         try {
@@ -222,12 +230,10 @@ public class Controller
         }
     }
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
 
-    }
+
+
 
 
     public void NMVView()
