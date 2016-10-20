@@ -16,7 +16,7 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button mnemonicParsing="false" onAction="#DeleteProject" prefHeight="25.0" prefWidth="320.0" text="Button" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#DeleteProject" prefHeight="25.0" prefWidth="320.0" text="Delete" GridPane.rowIndex="2" />
       <TextField fx:id="DP_P_ID" promptText="Project ID " GridPane.rowIndex="1" />
    </children>
 </GridPane>
